@@ -329,4 +329,68 @@ body {
     }
 
 }
+
+@media (max-width: 430px) {
+    .main__image {
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 30%;
+    }
+
+    .main__image .image {
+        display: none;
+    }
+
+    .main__image .text__block .text .main__title{
+        color: #222;
+        font-family: Lato;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
     
+    .main__image .text__block .text .subtitle{
+        color: #222;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .subtitle .fashion {
+        color: #F16D7F;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .offer .top__block {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .offer .bot__block .accesories img{
+        display: none;
+    }
+
+    .offer .bot__block .image {
+        background-image: url(./img/offer_accesories.jpg);
+        background-position: center;
+        background-size: 200%;
+        width: 360px;
+        height: 111px;
+    }
+
+    .offer .bot__block .accesories .text {    
+        position: absolute;
+        top: 35%;
+        left: 28.5%;
+        z-index: 1;
+    }
+}
