@@ -9,7 +9,7 @@ body {
 
 .center {
     padding-left: calc(50% - 570px);
-    padding-right: calc(50% - 507px);
+    padding-right: calc(50% - 570px);
 }
 
 .header {
@@ -303,6 +303,165 @@ body {
     margin-bottom: 60px;
 }
 
+.footer .features {
+    display: flex;
+    background-color: #222224;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer .features .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+    max-width: 360px;
+    
+}
+
+.footer .features .feature .image {
+    height: 40px;
+}
+
+.footer .features .feature .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+
+.footer .features .feature h5{
+    color: #FBFBFB;
+    font-size: 20px;
+}
+
+.footer .features .feature p{
+    color: #FBFBFB;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    max-width: 320px;
+}
+
+.footer .subscription {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(./img/subscribe-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer .subscription .feedback {    
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 360px; 
+
+}
+
+.footer .subscription .feedback .text p {
+    color: #222224;
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer .subscription .subscribe {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer .subscription .subscribe .text h4 {
+    color: #222224;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: bold;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    max-width: 320px;
+}
+
+.footer .subscription .subscribe .text p {
+    color: #222224;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    max-width: 360px;
+}
+
+.footer .subscription .subscription__form{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.footer .subscription .subscription__form .email {
+    padding: 8px 24px;
+    line-height: 3;
+    width: 100%;
+    background: #E1E1E1;
+    border: none;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .footer .subscription .subscription__form .button {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    background-color: #F16D7F;
+    display: inline-block;
+    border: none;
+    width: 50%;
+    border-radius: 30px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+.footer .copyright {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #222224;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer .copyright .text {
+    color: #FBFBFB;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    max-width: 320px;
+} 
+
+.footer .copyright .links {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+} 
+
 @media (max-width: 768px) {
     .product__cards {
         display: flex;
@@ -326,6 +485,23 @@ body {
         flex-wrap: nowrap;
         gap: 15px;
         flex-direction: column;
+    }
+
+    .footer .features {
+        display: flex;
+        background-color: #222224;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .footer .subscription {
+        flex-direction: column;
+        gap: 50px;
+        background-position: 26%;
+        
     }
 
 }
@@ -392,5 +568,17 @@ body {
         top: 35%;
         left: 28.5%;
         z-index: 1;
+    }
+
+    .footer .subscription {
+        background-position: 27%;
+        
+    }
+
+    .footer .copyright {
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 10px;
     }
 }
